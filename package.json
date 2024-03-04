@@ -1,0 +1,49 @@
+{
+  "name": "notus-nextjs",
+  "version": "1.1.0",
+  "description": "This Template is made with ❤ by Tanzir Ibne Ali",
+  "repository": "https://github.com/devtanzir/next-admin-template",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "@popperjs/core": "^2.11.8",
+    "@tailwindcss/forms": "^0.5.7",
+    "chart.js": "4.4.2",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.9",
+    "next": "14.1.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1",
+    "tailwindcss": "3.4.1"
+  },
+  "scripts": {
+    "start": "next start",
+    "build": "next build",
+    "dev": "next dev",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
+    "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "typescript": "5.3.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "10.4.18",
+    "postcss": "8.4.35"
+  }
+}
